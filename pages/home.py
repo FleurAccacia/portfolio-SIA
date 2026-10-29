@@ -1,7 +1,9 @@
 import streamlit as st
 from data import PROFILE, PROJECTS, SKILLS
+
 st.title(f"Hi, I'm {PROFILE['name']}")
 st.subheader(PROFILE["title"])
+
 left, right = st.columns([1, 2])
 with left:
  st.image("assets/photo.jpg", width=220)
@@ -17,7 +19,7 @@ with right:
 #  st.write(f"{PROFILE['linkedin']}")
 
 with open("assets/cv.pdf", "rb") as f:     
-    if st.download_button("Download my CV", f, file_name="cv.pdf"):
+    if st.download_button("Download my CV", f, file_name="cv.pdf", type="primary"):
         st.badge("Download Successfully", icon=":material/check:", color="green")
  
 st.divider() 

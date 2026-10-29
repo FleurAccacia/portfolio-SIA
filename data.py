@@ -2,7 +2,7 @@ PROFILE = {"name": "Gracia GOKAR", "title": "M1 student in Health & IA",
 "city": "Dijon, France", "email": "graciajulienne@gmail.com",
 "github": "https://github.com/FleurAccacia",
 "linkedin" : "https://www.linkedin.com/in/gracia-gokar/",
-"about": "I am a first-year master's student who likes MED "}
+"about": "Tech and Innovation Women who is interested in everything that lies at the intersection of tech and healthcare. I use the latest technologies to bring your ideas to life."}
 
 SKILLS = {"Python": 85, 
          "SQL": 60, 
