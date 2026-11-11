@@ -1,4 +1,4 @@
-# portfolio
+# My portfolio
 
 Personal Portfolio built with **Python** and **Streamlit**
 
@@ -9,7 +9,7 @@ Personal Portfolio built with **Python** and **Streamlit**
 Documentation : https://docs.streamlit.io/
 
 **Python** is a programming language that lets you work more quickly and integrate your systems more effectively.  
-Documentation : https://www.python.org/doc/versions/
+Documentation : https://www.python.org/doc/versions/  
 I used Python 3.10
 
 ## Deployment
