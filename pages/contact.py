@@ -1,16 +1,37 @@
 import streamlit as st
-# from data import CONTACT
 import csv
 import os
 from datetime import datetime
+import pandas as pd
+from geopy.geocoders import Nominatim
+from data import PROFILE
+
 
 st.title("How to Contact Me ?")
 
-with st.form("contact"):
- name = st.text_input("Your name")
- email = st.text_input("Your email")
- message = st.text_area("Your message")
- sent = st.form_submit_button("Send") # True only on the run that follows the click
+left, right = st.columns([1, 2])
+with left:
+    st.write("""Have a project in health or AI, an opportunity, or a question?
+             
+Send me a message, I usually reply within 48 hours.""")
+
+    @st.cache_data
+    def get_coordinates(city):
+        place = Nominatim(user_agent="portfolio-gracia").geocode(city)
+        return (place.latitude, place.longitude) if place else None
+
+    coords = get_coordinates(PROFILE["city"])
+
+    if coords:
+        df_map = pd.DataFrame({"lat": [coords[0]], "lon": [coords[1]]})
+        st.map(df_map, latitude="lat", longitude="lon", zoom=10, size=800, color="#1f4fd8")
+
+with right:
+    with st.form("contact"):
+        name = st.text_input("Your name")
+        email = st.text_input("Your email")
+        message = st.text_area("Your message")
+        sent = st.form_submit_button("Send") 
  
  
 def save(name, email, message)  :
