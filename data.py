@@ -4,11 +4,11 @@ PROFILE = {"name": "Gracia GOKAR", "title": "M1 student in Health & IA",
 "linkedin" : "https://www.linkedin.com/in/gracia-gokar/",
 "about": """ Hi, I'm Gracia 👋
 
-Entre **tech, leadership et impact**, je construis des projets qui connectent les idées aux opportunités. Diplômée en Génie Logiciel, je suis aujourd'hui en **Master Santé et Intelligence Artificielle** à Dijon.
+At the intersection of **tech, leadership, and impact**, I build projects that connect ideas to opportunities. With a background in Software Engineering, I am currently pursuing a **Master’s degree in Health and Artificial Intelligence** in Dijon.
 
-Je crois profondément que la technologie n'a de valeur que lorsqu'elle sert les humains. C'est pourquoi la HealthTech est l'un de mes coups de cœur : comprendre comment le numérique peut améliorer la santé, le bien-être et la qualité de vie des personnes.
+I firmly believe that technology only holds value when it serves humanity. That is why I am so passionate about HealthTech ; exploring how digital solutions can improve people's health, well-being, and quality of life.
 
-🤝 **Ouverte aux opportunités :** si vous avez des projets sur comment l'IA peut être appliquée en santé , je serai ravie d'en discuter."""}
+🤝 **Open to opportunities:** If you are working on projects involving the application of AI in healthcare, I would love to discuss them with you."""}
 
 SKILLS = {"Python": 85, 
          "SQL": 60, 

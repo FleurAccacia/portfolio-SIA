@@ -8,7 +8,7 @@ with st.sidebar: # everything in this block goes to the sidebar
  st.markdown(f"### {PROFILE['name']}")
  st.link_button("Consult my LinkedIn profile", f"{PROFILE['linkedin']}", type="primary")
  st.link_button("Click here to see all projects", f"{PROFILE['github']}", type="primary")
- 
+  
 pages = [
  st.Page("pages/home.py", title="About me", icon=":material/person:", default=True),
  st.Page("pages/projects.py", title="Projects", icon=":material/code:"),
@@ -16,3 +16,11 @@ pages = [
  st.Page("pages/contact.py", title="Contact", icon=":material/mail:"),
  st.Page("pages/lab_results.py", title="Lab results", icon=":material/assessment:")]
 st.navigation(pages).run() # shows the menu and runs the chosen page
+
+if "visits" not in st.session_state:
+    st.session_state.visits = 0
+st.session_state.visits += 1
+# st.write(f"Number of visits this session: {st.session_state.visits}")
+
+st.sidebar.divider()
+st.sidebar.caption(f"Visits in this session: {st.session_state['visits']}")
