@@ -13,5 +13,6 @@ pages = [
  st.Page("pages/home.py", title="About me", icon=":material/person:", default=True),
  st.Page("pages/projects.py", title="Projects", icon=":material/code:"),
  st.Page("pages/skills.py", title="Skills", icon=":material/bar_chart:"),
- st.Page("pages/contact.py", title="Contact", icon=":material/mail:")]
+ st.Page("pages/contact.py", title="Contact", icon=":material/mail:"),
+ st.Page("pages/lab_results.py", title="Lab results", icon=":material/assessment:")]
 st.navigation(pages).run() # shows the menu and runs the chosen page
