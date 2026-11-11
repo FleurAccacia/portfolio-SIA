@@ -14,21 +14,32 @@ SKILLS = {"Python": 85,
          "SQL": 60, 
         "Git": 65 , 
         "Streamlit":20, 
+        "Tkinter": 40,
         "Flutter": 70,
-        "Matplotlib": 25} 
+        "Matplotlib": 25,
+        "Javascript": 50} 
 
 PROJECTS = [
+{"title": "Portfolio", "description": "Portfolio personnel développé avec Streamlit et Python",
+ "tags": ["Python", "Streamlit"], "year": 2026, "link": "https://gracia-gokar-portfolio.streamlit.app/"},
+
 {"title": "Tic-tac-toe with tkinter", "description": "A graphical game with a computer opponent.",
-"tags": ["Python", "GUI"], "year": 2026, "link": ""},
+ "tags": ["Python", "GUI"], "year": 2026, "link": ""},
 
-{"title": "Flutter App", "description": "Developpement d'une application mobile avec flutter",
-"tags": ["Flutter", "Mobile"], "year": 2025, "link": ""},
+{"title": "TP Machine Learning", "description": "Entraînement de trois modèles de classification sur deux types de données, des textes (pour déterminer le sujet d'un message) et des images (pour reconnaître un chiffre manuscrit), à partir d'exemples dont la réponse est connue, puis évaluation de chacun sur des données jamais vues afin de comparer leurs performances.",
+ "tags": ["Python", "Machine Learning" , "Matplotlib"], "year": 2026, "link": ""},
 
-{"title": "TP2", "description": "Apprentissage de Matplotlib et utilisation des fonctions ",
-"tags": ["Fonction", "Matplotlib"], "year": 2026, "link": ""},
+{"title": "WhatsApp Lite", "description": "Developpement Frontend d'une app de messagerie en Flutter",
+ "tags": ["Flutter", "Mobile"], "year": 2026, "link": "https://github.com/FleurAccacia/WhatsAppLite"},
 
-{"title": "TP3", "description": "Machine Learning ",
-"tags": ["Accuracy", "prediction"], "year": 2026, "link": ""},
+{"title": "Generateur de Code QR", "description": "Generateur de codes QR avec Python et tkinter",
+ "tags": ["Python", "GUI"], "year": 2025, "link": "https://github.com/FleurAccacia/Generator-qrcode"},
+
+{"title": "Dadi Food & Coffee", "description": "Site vitrine du restaurant Dadi Food & Coffee",
+ "tags": ["React","Javascript", "WEB"], "year": 2026, "link": "https://github.com/FleurAccacia/Dadi_Food_Coffee"},
+
+{"title": "Half-to-Job", "description": "Site vitrine pour la recherche de jobs à temps partiel",
+ "tags": ["React","Javascript", "WEB"], "year": 2024, "link": "https://half-to-job.vercel.app/"},
 
 
 ]

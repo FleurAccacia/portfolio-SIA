@@ -34,13 +34,46 @@ else:
 
 
 columns = st.columns(2) # permet d'afficher les projets en deux colonnes
-for i , project in enumerate(filtered_projects):
-    with columns[i % 2]: 
-        with st.container(border= True):
-            st.subheader(project["title"])
+
+st.markdown(
+    """
+    <style>
+    [class*="st-key-project_"] {
+        border: 1px solid #6b2440;
+        border-radius: 16px;
+        padding: 12px 8px;
+        box-shadow: 0 2px 8px rgba(107, 36, 64, 0.08);
+        transition: transform 0.15s, box-shadow 0.15s;
+    }
+    [class*="st-key-project_"]:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 6px 16px rgba(107, 36, 64, 0.18);
+    }
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
+
+# for i , project in enumerate(filtered_projects):
+#     with columns[i % 2]: 
+#         with st.container(border= True, key=f"project_{i}"):
+#             st.subheader(project["title"], anchor=False)
+#             st.write(project["description"])
+#             st.write(f"Tags: {', '.join(project['tags'])}" for tag in project["tags"])
+#             st.caption(f"Year: {project['year']}")
+#             st.link_button("See Project", project["link"]) # ajoute un bouton pour voir le projet
+
+for i, project in enumerate(filtered_projects):
+    with columns[i % 2]:
+        with st.container(border=True, key=f"project_{i}"):
+            st.subheader(project["title"], anchor=False)
+            st.caption(f"{project['year']}")
             st.write(project["description"])
-            st.write(f"Tags: {', '.join(project['tags'])}")
-            st.caption(f"Year: {project['year']}")
-            st.link_button("See Project", project["link"]) # ajoute un bouton pour voir le projet
+            st.markdown(" ".join(f":blue-badge[{tag}]" for tag in project["tags"]))
+            if project["link"]:
+                st.link_button("See Project", project["link"], icon=":material/arrow_outward:")
+            
+            
+            
 st.write(f"{len(filtered_projects)} project(s) found")             
 
