@@ -6,8 +6,8 @@ st.set_page_config(page_title=PROFILE["name"], page_icon=":briefcase:", layout="
 with st.sidebar: # everything in this block goes to the sidebar
  st.image("assets/photo.jpg", width=120)
  st.markdown(f"### {PROFILE['name']}")
- st.link_button("Consult my LinkedIn profile", f"{PROFILE['linkedin']}")
- st.link_button("Click here to see all projects", f"{PROFILE['github']}")
+ st.link_button("Consult my LinkedIn profile", f"{PROFILE['linkedin']}", type="primary")
+ st.link_button("Click here to see all projects", f"{PROFILE['github']}", type="primary")
  
 pages = [
  st.Page("pages/home.py", title="About me", icon=":material/person:", default=True),
