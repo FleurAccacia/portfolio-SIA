@@ -2,7 +2,13 @@ PROFILE = {"name": "Gracia GOKAR", "title": "M1 student in Health & IA",
 "city": "Dijon, France", "email": "graciajulienne@gmail.com",
 "github": "https://github.com/FleurAccacia",
 "linkedin" : "https://www.linkedin.com/in/gracia-gokar/",
-"about": " "}
+"about": """Hi, I'm Gracia 👋
+
+At the intersection of **tech, leadership, and impact**, I build projects that connect ideas to opportunities. With a background in Software Engineering, I am currently pursuing a **Master’s degree in Health and Artificial Intelligence** in Dijon.
+
+I firmly believe that technology only holds value when it serves humanity. That is why I am so passionate about HealthTech ; exploring how digital solutions can improve people's health, well-being, and quality of life.
+
+🤝 **Open to opportunities:** If you are working on projects involving the application of AI in healthcare, I would love to discuss them with you."""} 
 
 SKILLS = {"Python": 85, 
          "SQL": 60, 
